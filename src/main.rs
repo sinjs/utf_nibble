@@ -140,7 +140,7 @@ fn main() {
     match args.get(1).unwrap().as_str() {
         "encode" => {
             let filename = args.get(2).unwrap();
-            let content = std::fs::read_to_string(filename).unwrap();
+            let content = fs::read_to_string(filename).unwrap();
             let encoded = encode_str(content.as_str());
 
             std::io::stdout().write_all(&*encoded).unwrap();
