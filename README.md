@@ -21,3 +21,9 @@ cargo run --release # Release mode
 
 ## Usage
 
+```shell
+utf_nibble [encode|decode] [file]
+# Using an unix like shell, you can:
+# utf_nibble encode input.txt > output.txt
+# utf_nibble decode output.txt > decoded.txt
+```
